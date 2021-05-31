@@ -9,5 +9,8 @@ import retrofit2.http.Url;
 public interface IBooksApi {
 
     @GET
-    Call<BookShelfModel> getBooks(@Url String url);
+    Call<BookShelfModel> getAllBooks(@Url String url);
+
+    @GET
+    Call<BookShelfModel> getBookByID(@Url String url);
 }

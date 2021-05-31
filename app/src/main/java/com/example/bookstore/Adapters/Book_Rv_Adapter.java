@@ -15,6 +15,7 @@ import com.example.bookstore.Models.BookModel;
 import com.example.bookstore.Models.BookShelfModel;
 import com.example.bookstore.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Book_Rv_Adapter extends RecyclerView.Adapter<Book_Rv_Adapter.ViewHolder> {
@@ -22,9 +23,18 @@ public class Book_Rv_Adapter extends RecyclerView.Adapter<Book_Rv_Adapter.ViewHo
     private List<BookModel> bookList;
     private IBookClicked listener;
 
-    public Book_Rv_Adapter(List<BookModel> bookList, IBookClicked listener) {
-        this.bookList = bookList;
+    public Book_Rv_Adapter(IBookClicked listener) {
+        bookList = new ArrayList<>();
         this.listener = listener;
+    }
+
+    public void addBookItems(List<BookModel> books){
+        bookList.clear();
+        bookList.addAll(books);
+    }
+
+    public BookModel getBook(int position){
+        return bookList.get(position);
     }
 
 

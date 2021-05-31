@@ -4,17 +4,20 @@ import android.app.Application;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
+import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
 import com.example.bookstore.Models.BookModel;
 import com.example.bookstore.Repository.BooksRepository;
+import com.example.bookstore.Room.BookTable;
 
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
 public class BooksViewModel extends AndroidViewModel {
-    private MutableLiveData<List<BookModel>> booklist;
+    private MutableLiveData<List<BookModel>> bookList;
+    private LiveData<List<BookTable>> favoriteBooks;
     private BooksRepository booksRepository;
 
     public BooksViewModel(@NonNull @NotNull Application application) {
@@ -23,9 +26,23 @@ public class BooksViewModel extends AndroidViewModel {
     }
 
     public MutableLiveData<List<BookModel>> getRetrofitBooks(String startIndex) {
-        booklist = booksRepository.getApiBooksList(startIndex);
-        return booklist;
+        bookList = booksRepository.getApiBooksList(startIndex);
+        return bookList;
     }
 
+    public LiveData<List<BookTable>> getFavoriteBooks() {
+        return booksRepository.getFavoriteBooksIds();
+    }
 
+    public void insertFavoriteBook(BookTable bookTable) {
+        booksRepository.insertFavoriteBook(bookTable);
+    }
+
+    public LiveData<BookTable> getFavoriteBookByID(String bookID) {
+        return booksRepository.checkIfFavoriteBookExists(bookID);
+    }
+
+    public void removeFavoriteBook(String bookID){
+        booksRepository.removeFavoriteBookByID(bookID);
+    }
 }
