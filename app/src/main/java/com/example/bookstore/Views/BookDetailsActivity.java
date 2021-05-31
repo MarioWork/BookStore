@@ -5,8 +5,6 @@ import androidx.lifecycle.Observer;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -18,7 +16,6 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.example.bookstore.Models.BookModel;
 import com.example.bookstore.R;
-import com.example.bookstore.Repository.BooksRepository;
 import com.example.bookstore.Room.BookTable;
 import com.example.bookstore.ViewModels.BooksViewModel;
 
@@ -56,7 +53,7 @@ public class BookDetailsActivity extends AppCompatActivity {
             verifyFavorite();
         } else {
             //if there is no BookModel return to parent page
-            Intent intent = new Intent(BookDetailsActivity.this, FeedActivity.class);
+            Intent intent = new Intent(BookDetailsActivity.this, MainActivity.class);
             startActivity(intent);
         }
     }

@@ -28,15 +28,15 @@ public class Book_Rv_Adapter extends RecyclerView.Adapter<Book_Rv_Adapter.ViewHo
         this.listener = listener;
     }
 
-    public void addBookItems(List<BookModel> books){
+    public void clearAndAddItems(List<BookModel> books){
         bookList.clear();
         bookList.addAll(books);
     }
 
+
     public BookModel getBook(int position){
         return bookList.get(position);
     }
-
 
     @NonNull
     @Override
@@ -72,10 +72,6 @@ public class Book_Rv_Adapter extends RecyclerView.Adapter<Book_Rv_Adapter.ViewHo
     @Override
     public int getItemCount() {
         return bookList.size();
-    }
-
-    public BookModel getItem(int position) {
-        return bookList.get(position);
     }
 
     //View Holder Class

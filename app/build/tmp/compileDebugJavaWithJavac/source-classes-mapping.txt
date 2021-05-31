@@ -3,9 +3,6 @@ com/example/bookstore/Models/BookInfoModel.java
  com.example.bookstore.Models.BookInfoModel$1
 com/example/bookstore/Models/BookShelfModel.java
  com.example.bookstore.Models.BookShelfModel
-com/example/bookstore/Views/BookDetailsActivity.java
- com.example.bookstore.Views.BookDetailsActivity
- com.example.bookstore.Views.BookDetailsActivity$1
 com/example/bookstore/Room/BookTableDAO.java
  com.example.bookstore.Room.BookTableDAO
 com/example/bookstore/BuildConfig.java
@@ -13,16 +10,8 @@ com/example/bookstore/BuildConfig.java
 com/example/bookstore/Models/BookCoverLinksModel.java
  com.example.bookstore.Models.BookCoverLinksModel
  com.example.bookstore.Models.BookCoverLinksModel$1
-com/example/bookstore/Views/FeedActivity.java
- com.example.bookstore.Views.FeedActivity
- com.example.bookstore.Views.FeedActivity$1
- com.example.bookstore.Views.FeedActivity$2
- com.example.bookstore.Views.FeedActivity$3
 com/example/bookstore/Utils/AppConstants.java
  com.example.bookstore.Utils.AppConstants
-com/example/bookstore/Models/BookModel.java
- com.example.bookstore.Models.BookModel
- com.example.bookstore.Models.BookModel$1
 com/example/bookstore/Room/FavoriteBooksDatabase.java
  com.example.bookstore.Room.FavoriteBooksDatabase
  com.example.bookstore.Room.FavoriteBooksDatabase$1
@@ -31,21 +20,50 @@ com/example/bookstore/Retrofit/RetrofitRequest.java
 com/example/bookstore/Models/BookSaleInfoModel.java
  com.example.bookstore.Models.BookSaleInfoModel
  com.example.bookstore.Models.BookSaleInfoModel$1
-com/example/bookstore/ViewModels/BooksViewModel.java
- com.example.bookstore.ViewModels.BooksViewModel
-com/example/bookstore/Models/BookPriceInfoModel.java
- com.example.bookstore.Models.BookPriceInfoModel
- com.example.bookstore.Models.BookPriceInfoModel$1
-com/example/bookstore/Repository/BooksRepository.java
- com.example.bookstore.Repository.BooksRepository
- com.example.bookstore.Repository.BooksRepository$1
- com.example.bookstore.Repository.BooksRepository$InsertFavoriteBookAsyncTask
- com.example.bookstore.Repository.BooksRepository$RemoveFavoriteBookAsyncTask
+com/example/bookstore/databinding/ActivityMainBinding.java
+ com.example.bookstore.databinding.ActivityMainBinding
 com/example/bookstore/Adapters/Book_Rv_Adapter.java
  com.example.bookstore.Adapters.Book_Rv_Adapter
  com.example.bookstore.Adapters.Book_Rv_Adapter$IBookClicked
  com.example.bookstore.Adapters.Book_Rv_Adapter$ViewHolder
+com/example/bookstore/Models/BookPriceInfoModel.java
+ com.example.bookstore.Models.BookPriceInfoModel
+ com.example.bookstore.Models.BookPriceInfoModel$1
+com/example/bookstore/databinding/BookRvItemBinding.java
+ com.example.bookstore.databinding.BookRvItemBinding
 com/example/bookstore/Retrofit/IBooksApi.java
  com.example.bookstore.Retrofit.IBooksApi
+com/example/bookstore/databinding/FragmentFavoritesBinding.java
+ com.example.bookstore.databinding.FragmentFavoritesBinding
 com/example/bookstore/Room/BookTable.java
  com.example.bookstore.Room.BookTable
+com/example/bookstore/Models/BookModel.java
+ com.example.bookstore.Models.BookModel
+ com.example.bookstore.Models.BookModel$1
+com/example/bookstore/databinding/FragmentFeedBinding.java
+ com.example.bookstore.databinding.FragmentFeedBinding
+com/example/bookstore/Repository/BooksRepository.java
+ com.example.bookstore.Repository.BooksRepository
+ com.example.bookstore.Repository.BooksRepository$1
+ com.example.bookstore.Repository.BooksRepository$2
+ com.example.bookstore.Repository.BooksRepository$InsertFavoriteBookAsyncTask
+ com.example.bookstore.Repository.BooksRepository$RemoveFavoriteBookAsyncTask
+com/example/bookstore/databinding/ActivityBookDetailsBinding.java
+ com.example.bookstore.databinding.ActivityBookDetailsBinding
+com/example/bookstore/ViewModels/BooksViewModel.java
+ com.example.bookstore.ViewModels.BooksViewModel
+com/example/bookstore/Views/BookDetailsActivity.java
+ com.example.bookstore.Views.BookDetailsActivity
+ com.example.bookstore.Views.BookDetailsActivity$1
+com/example/bookstore/Views/FeedFragment.java
+ com.example.bookstore.Views.FeedFragment
+ com.example.bookstore.Views.FeedFragment$1
+ com.example.bookstore.Views.FeedFragment$2
+com/example/bookstore/Views/MainActivity.java
+ com.example.bookstore.Views.MainActivity
+ com.example.bookstore.Views.MainActivity$1
+com/example/bookstore/Views/FavoritesFragment.java
+ com.example.bookstore.Views.FavoritesFragment
+ com.example.bookstore.Views.FavoritesFragment$1
+ com.example.bookstore.Views.FavoritesFragment$2
+ com.example.bookstore.Views.FavoritesFragment$3

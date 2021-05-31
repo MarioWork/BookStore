@@ -16,10 +16,8 @@ public interface BookTableDAO {
     @Insert
     void insertFavorite(BookTable favoriteBook);
 
-
     @Query("SELECT * FROM FavoritesTable")
     LiveData<List<BookTable>> getAllFavoriteBooks();
-
 
     @Query("SELECT * FROM FavoritesTable WHERE bookID = :bookID")
     LiveData<BookTable> getFavoriteBookByID(String bookID);

@@ -1,4 +1,4 @@
-#Mon May 31 03:20:00 AZOST 2021
-base.0=C\:\\Users\\filip\\Documents\\BookStore\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Mon May 31 09:56:33 AZOST 2021
+base.0=C\:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

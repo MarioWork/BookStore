@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_book_details.xml",
+        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\layout\\activity_book_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\book_rv_item.xml",
+        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\layout\\book_rv_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\content_main.xml",
+        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\layout\\content_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_feed.xml",
+        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\layout\\fragment_feed.xml"
+    },
+    {
+        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_favorites.xml",
+        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\layout\\fragment_favorites.xml"
+    },
+    {
+        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_feed.xml",
+        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\layout\\activity_feed.xml"
+    }
+]

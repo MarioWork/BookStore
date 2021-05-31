@@ -1,5 +1,6 @@
 package com.example.bookstore.Retrofit;
 
+import com.example.bookstore.Models.BookModel;
 import com.example.bookstore.Models.BookShelfModel;
 
 import retrofit2.Call;
@@ -12,5 +13,5 @@ public interface IBooksApi {
     Call<BookShelfModel> getAllBooks(@Url String url);
 
     @GET
-    Call<BookShelfModel> getBookByID(@Url String url);
+    Call<BookModel> getBookByID(@Url String url);
 }

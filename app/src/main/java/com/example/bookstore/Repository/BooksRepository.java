@@ -3,6 +3,7 @@ package com.example.bookstore.Repository;
 
 import android.app.Application;
 import android.os.AsyncTask;
+import android.util.Log;
 import android.widget.Toast;
 
 import androidx.lifecycle.LiveData;
@@ -17,6 +18,7 @@ import com.example.bookstore.Room.BookTable;
 import com.example.bookstore.Room.BookTableDAO;
 import com.example.bookstore.Room.FavoriteBooksDatabase;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -31,9 +33,11 @@ public class BooksRepository {
     private MutableLiveData<List<BookModel>> bookList;
     private final IBooksApi booksApi;
     private Application application;
+    private static String TAG = "BooksRepository";
+
 
     //Room
-    private LiveData<List<BookTable>> favoritesBooks;
+    private MutableLiveData<List<BookModel>> favoriteBooks;
     private BookTableDAO bookTableDAO;
 
 
@@ -41,6 +45,7 @@ public class BooksRepository {
     public BooksRepository(Application application) {
         booksApi = RetrofitRequest.getRetrofitInstance().create(IBooksApi.class);
         bookList = new MutableLiveData<>();
+        favoriteBooks = new MutableLiveData<>();
         this.application = application;
 
         FavoriteBooksDatabase database =
@@ -72,11 +77,43 @@ public class BooksRepository {
         return bookList;
     }
 
+
     //Get Favorite Books IDs from Local DataBase (room)
-    public LiveData<List<BookTable>> getFavoriteBooksIds() {
-        favoritesBooks = bookTableDAO.getAllFavoriteBooks();
-        return favoritesBooks;
+    public LiveData<List<BookTable>> getFavoriteBooksIDS() {
+        return bookTableDAO.getAllFavoriteBooks();
     }
+
+    //Use Favorite Books IDs to get API information about them
+    public LiveData<List<BookModel>> getAllFavoriteBooks(List<BookTable> bookIds) {
+        List<BookModel> finalFavoriteBooksList = new ArrayList<>();
+
+        for (BookTable favBook : bookIds) {
+            Call<BookModel> call = booksApi.getBookByID("v1/volumes/" + favBook.getBookID());
+
+            call.enqueue(new Callback<BookModel>() {
+                @Override
+                public void onResponse(Call<BookModel> call, Response<BookModel> response) {
+                    if (!response.isSuccessful()) {
+                        return;
+                    }
+                    finalFavoriteBooksList.add(new BookModel(response.body().getId(),
+                            response.body().getBookInfo(),
+                            response.body().getBookSaleInfo()));
+
+                    favoriteBooks.postValue(finalFavoriteBooksList);
+                }
+
+                @Override
+                public void onFailure(Call<BookModel> call, Throwable t) {
+                    Log.d(TAG, "Error getting favorites from api: " + t.getMessage());
+                }
+            });
+
+        }
+
+        return favoriteBooks;
+    }
+
 
     //Checks if the book exists in the local database (room)
     public LiveData<BookTable> checkIfFavoriteBookExists(String bookID) {

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\filip\\Documents\\BookStore\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\filip\\.gradle\\caches\\transforms-2\\files-2.1\\7160c6b9fdb2bc1e41d9bd715d01fdc2\\appcompat-1.3.0\\res\\values-night-v8\\values-night-v8.xml",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\filip\\Documents\\BookStore\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -21,9 +21,10 @@ public class BookModel implements Parcelable {
     private BookSaleInfoModel bookSaleInfo;
 
     //Constructor
-    public BookModel(String id, BookInfoModel bookInfo) {
+    public BookModel(String id, BookInfoModel bookInfo, BookSaleInfoModel bookSaleInfo) {
         this.id = id;
         this.bookInfo = bookInfo;
+        this.bookSaleInfo = bookSaleInfo;
     }
 
     //Getters

@@ -30,8 +30,12 @@ public class BooksViewModel extends AndroidViewModel {
         return bookList;
     }
 
-    public LiveData<List<BookTable>> getFavoriteBooks() {
-        return booksRepository.getFavoriteBooksIds();
+    public LiveData<List<BookTable>> getFavoriteBooksIDS() {
+        return booksRepository.getFavoriteBooksIDS();
+    }
+
+    public LiveData<List<BookModel>> getFavoriteBooks(List<BookTable> favBooksIDs){
+        return booksRepository.getAllFavoriteBooks(favBooksIDs);
     }
 
     public void insertFavoriteBook(BookTable bookTable) {
@@ -42,7 +46,7 @@ public class BooksViewModel extends AndroidViewModel {
         return booksRepository.checkIfFavoriteBookExists(bookID);
     }
 
-    public void removeFavoriteBook(String bookID){
+    public void removeFavoriteBook(String bookID) {
         booksRepository.removeFavoriteBookByID(bookID);
     }
 }
