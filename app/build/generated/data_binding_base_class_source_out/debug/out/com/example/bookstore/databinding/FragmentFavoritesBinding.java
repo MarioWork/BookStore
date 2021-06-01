@@ -27,28 +27,28 @@ public final class FragmentFavoritesBinding implements ViewBinding {
   public final View divider;
 
   @NonNull
-  public final ImageView emptyListImageIvFavorites;
+  public final ImageView emptyListImageIvFeed;
 
   @NonNull
-  public final TextView emptyListTitleTvFavorites;
+  public final TextView emptyListTitleTvFeed;
 
   @NonNull
-  public final TextView emptyListdescriptionTvFavorties;
+  public final TextView emptyListdescriptionTvFeed;
 
   @NonNull
   public final RecyclerView favoriteBooksRvFavorites;
 
   private FragmentFavoritesBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView categoryTitleTvFavorites, @NonNull View divider,
-      @NonNull ImageView emptyListImageIvFavorites, @NonNull TextView emptyListTitleTvFavorites,
-      @NonNull TextView emptyListdescriptionTvFavorties,
+      @NonNull ImageView emptyListImageIvFeed, @NonNull TextView emptyListTitleTvFeed,
+      @NonNull TextView emptyListdescriptionTvFeed,
       @NonNull RecyclerView favoriteBooksRvFavorites) {
     this.rootView = rootView;
     this.categoryTitleTvFavorites = categoryTitleTvFavorites;
     this.divider = divider;
-    this.emptyListImageIvFavorites = emptyListImageIvFavorites;
-    this.emptyListTitleTvFavorites = emptyListTitleTvFavorites;
-    this.emptyListdescriptionTvFavorties = emptyListdescriptionTvFavorties;
+    this.emptyListImageIvFeed = emptyListImageIvFeed;
+    this.emptyListTitleTvFeed = emptyListTitleTvFeed;
+    this.emptyListdescriptionTvFeed = emptyListdescriptionTvFeed;
     this.favoriteBooksRvFavorites = favoriteBooksRvFavorites;
   }
 
@@ -91,21 +91,21 @@ public final class FragmentFavoritesBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.emptyListImage_iv_favorites;
-      ImageView emptyListImageIvFavorites = rootView.findViewById(id);
-      if (emptyListImageIvFavorites == null) {
+      id = R.id.emptyListImage_iv_feed;
+      ImageView emptyListImageIvFeed = rootView.findViewById(id);
+      if (emptyListImageIvFeed == null) {
         break missingId;
       }
 
-      id = R.id.emptyListTitle_tv_favorites;
-      TextView emptyListTitleTvFavorites = rootView.findViewById(id);
-      if (emptyListTitleTvFavorites == null) {
+      id = R.id.emptyListTitle_tv_feed;
+      TextView emptyListTitleTvFeed = rootView.findViewById(id);
+      if (emptyListTitleTvFeed == null) {
         break missingId;
       }
 
-      id = R.id.emptyListdescription_tv_favorties;
-      TextView emptyListdescriptionTvFavorties = rootView.findViewById(id);
-      if (emptyListdescriptionTvFavorties == null) {
+      id = R.id.emptyListdescription_tv_feed;
+      TextView emptyListdescriptionTvFeed = rootView.findViewById(id);
+      if (emptyListdescriptionTvFeed == null) {
         break missingId;
       }
 
@@ -116,8 +116,8 @@ public final class FragmentFavoritesBinding implements ViewBinding {
       }
 
       return new FragmentFavoritesBinding((ConstraintLayout) rootView, categoryTitleTvFavorites,
-          divider, emptyListImageIvFavorites, emptyListTitleTvFavorites,
-          emptyListdescriptionTvFavorties, favoriteBooksRvFavorites);
+          divider, emptyListImageIvFeed, emptyListTitleTvFeed, emptyListdescriptionTvFeed,
+          favoriteBooksRvFavorites);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

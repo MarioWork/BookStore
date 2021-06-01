@@ -15,7 +15,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.bookstore.Adapters.Book_Rv_Adapter;
+import com.example.bookstore.Adapters.FavoriteBooksAdapter;
 import com.example.bookstore.Models.BookModel;
 import com.example.bookstore.R;
 import com.example.bookstore.Room.BookTable;
@@ -26,15 +26,15 @@ import org.jetbrains.annotations.NotNull;
 import java.util.List;
 
 public class FavoritesFragment extends Fragment {
-    private Book_Rv_Adapter.IBookClicked listener;
+    private FavoriteBooksAdapter.IBookClicked listener;
     private BooksViewModel booksViewModel;
-    private Book_Rv_Adapter adapter;
+    private FavoriteBooksAdapter adapter;
 
     //Widgets
     private RecyclerView favoriteBookRV;
     private TextView categoryTitle_tv;
-    private TextView emptyListTitle_rv;
-    private TextView emptyListDescription_rv;
+    private TextView emptyListTitle_tv;
+    private TextView emptyListDescription_tv;
     private ImageView emptyListImage_iv;
 
     @Nullable
@@ -50,27 +50,27 @@ public class FavoritesFragment extends Fragment {
 
         categoryTitle_tv = getView().findViewById(R.id.categoryTitle_tv_favorites);
         categoryTitle_tv.setText("Favorites");
-        emptyListImage_iv = getView().findViewById(R.id.emptyListImage_iv_favorites);
-        emptyListTitle_rv = getView().findViewById(R.id.emptyListTitle_tv_favorites);
-        emptyListDescription_rv = getView().findViewById(R.id.emptyListdescription_tv_favorties);
+        emptyListImage_iv = getView().findViewById(R.id.emptyListImage_iv_feed);
+        emptyListTitle_tv = getView().findViewById(R.id.emptyListTitle_tv_feed);
+        emptyListDescription_tv = getView().findViewById(R.id.emptyListdescription_tv_feed);
 
         //Setup Recyclerview
         onItemClick();
         setupBookRecyclerView();
 
         //Fill the recyclerview
-        getFavoritsListIDS();
+        getFavoritesListIDS();
 
 
     }
 
     private void setupBookRecyclerView() {
-        adapter = new Book_Rv_Adapter(listener);
+        adapter = new FavoriteBooksAdapter(listener);
         favoriteBookRV = getView().findViewById(R.id.favoriteBooks_rv_favorites);
         favoriteBookRV.setAdapter(adapter);
     }
 
-    private void getFavoritsListIDS() {
+    private void getFavoritesListIDS() {
         booksViewModel = new ViewModelProvider(this).get(BooksViewModel.class);
         booksViewModel.getFavoriteBooksIDS().observe(getActivity(), new Observer<List<BookTable>>() {
             @Override
@@ -79,12 +79,12 @@ public class FavoritesFragment extends Fragment {
                     getFavoritesList(bookTableList);
 
                     emptyListImage_iv.setVisibility(View.GONE);
-                    emptyListTitle_rv.setVisibility(View.GONE);
-                    emptyListDescription_rv.setVisibility(View.GONE);
+                    emptyListTitle_tv.setVisibility(View.GONE);
+                    emptyListDescription_tv.setVisibility(View.GONE);
                 } else {
                     emptyListImage_iv.setVisibility(View.VISIBLE);
-                    emptyListTitle_rv.setVisibility(View.VISIBLE);
-                    emptyListDescription_rv.setVisibility(View.VISIBLE);
+                    emptyListTitle_tv.setVisibility(View.VISIBLE);
+                    emptyListDescription_tv.setVisibility(View.VISIBLE);
                 }
             }
         });
@@ -104,7 +104,7 @@ public class FavoritesFragment extends Fragment {
     }
 
     private void onItemClick() {
-        listener = new Book_Rv_Adapter.IBookClicked() {
+        listener = new FavoriteBooksAdapter.IBookClicked() {
             @Override
             public void onClick(int position) {
                 Intent intent = new Intent(getActivity(), BookDetailsActivity.class);

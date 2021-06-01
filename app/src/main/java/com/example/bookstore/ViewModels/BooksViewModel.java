@@ -5,19 +5,26 @@ import android.app.Application;
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
+import androidx.paging.LivePagedListBuilder;
+import androidx.paging.PageKeyedDataSource;
+import androidx.paging.PagedList;
 
 import com.example.bookstore.Models.BookModel;
 import com.example.bookstore.Repository.BooksRepository;
+import com.example.bookstore.Retrofit.AllBooksDataSourceFactory;
 import com.example.bookstore.Room.BookTable;
 
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
+import static com.example.bookstore.Utils.AppConstants.MAX_RESULTS_PER_CALL;
+
 public class BooksViewModel extends AndroidViewModel {
-    private MutableLiveData<List<BookModel>> bookList;
-    private LiveData<List<BookTable>> favoriteBooks;
+    private LiveData<PagedList<BookModel>> pagedListLiveData;
+    private LiveData<PageKeyedDataSource<Integer, BookModel>> pageKeyedDataSourceLiveData;
+
+
     private BooksRepository booksRepository;
 
     public BooksViewModel(@NonNull @NotNull Application application) {
@@ -25,17 +32,26 @@ public class BooksViewModel extends AndroidViewModel {
         booksRepository = new BooksRepository(application);
     }
 
-    public MutableLiveData<List<BookModel>> getRetrofitBooks(String startIndex) {
-        bookList = booksRepository.getApiBooksList(startIndex);
-        return bookList;
+
+    public LiveData<PagedList<BookModel>> getRetrofitBooks() {
+        AllBooksDataSourceFactory allBooksDataSourceFactory = new AllBooksDataSourceFactory();
+        pageKeyedDataSourceLiveData = allBooksDataSourceFactory.getDataSourceList();
+
+        PagedList.Config config =
+                (new PagedList.Config.Builder()
+                        .setEnablePlaceholders(false)
+                        .setPageSize(MAX_RESULTS_PER_CALL))
+                        .build();
+
+        return pagedListLiveData = (new LivePagedListBuilder(allBooksDataSourceFactory, config)).build();
     }
 
     public LiveData<List<BookTable>> getFavoriteBooksIDS() {
-        return booksRepository.getFavoriteBooksIDS();
+        return booksRepository.getFavoriteBooksIdsFromLocal();
     }
 
-    public LiveData<List<BookModel>> getFavoriteBooks(List<BookTable> favBooksIDs){
-        return booksRepository.getAllFavoriteBooks(favBooksIDs);
+    public LiveData<List<BookModel>> getFavoriteBooks(List<BookTable> favBooksIDs) {
+        return booksRepository.getAllFavoriteBooksFromAPI(favBooksIDs);
     }
 
     public void insertFavoriteBook(BookTable bookTable) {
@@ -43,7 +59,7 @@ public class BooksViewModel extends AndroidViewModel {
     }
 
     public LiveData<BookTable> getFavoriteBookByID(String bookID) {
-        return booksRepository.checkIfFavoriteBookExists(bookID);
+        return booksRepository.checkIfFavoriteBookExistsLocaly(bookID);
     }
 
     public void removeFavoriteBook(String bookID) {

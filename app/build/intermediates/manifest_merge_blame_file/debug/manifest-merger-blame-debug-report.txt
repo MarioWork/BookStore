@@ -15,7 +15,7 @@
 11-->C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:7:5-23:19
+13-->C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:7:5-21:19
 14        android:allowBackup="true"
 14-->C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -32,35 +32,32 @@
 21        android:testOnly="true"
 22        android:theme="@style/Theme.BookStore" >
 22-->C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:13:9-47
-23        <activity
-23-->C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:14:9-16:64
-24            android:name="com.example.bookstore.Views.BookDetailsActivity"
-24-->C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:15:13-54
-25            android:parentActivityName="com.example.bookstore.Views.MainActivity" />
-25-->C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:16:13-61
-26        <activity android:name="com.example.bookstore.Views.MainActivity" >
-26-->C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:17:9-22:20
-26-->C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:17:19-53
-27            <intent-filter>
-27-->C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:18:13-21:29
-28                <action android:name="android.intent.action.MAIN" />
-28-->C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:19:17-69
-28-->C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:19:25-66
-29
-30                <category android:name="android.intent.category.LAUNCHER" />
-30-->C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:20:17-77
-30-->C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:20:27-74
-31            </intent-filter>
-32        </activity>
-33
-34        <service
-34-->[androidx.room:room-runtime:2.3.0] C:\Users\filip\.gradle\caches\transforms-2\files-2.1\43f856650d9ebd23d57d166c537c37bb\room-runtime-2.3.0\AndroidManifest.xml:25:9-28:40
-35            android:name="androidx.room.MultiInstanceInvalidationService"
-35-->[androidx.room:room-runtime:2.3.0] C:\Users\filip\.gradle\caches\transforms-2\files-2.1\43f856650d9ebd23d57d166c537c37bb\room-runtime-2.3.0\AndroidManifest.xml:26:13-74
-36            android:directBootAware="true"
-36-->[androidx.room:room-runtime:2.3.0] C:\Users\filip\.gradle\caches\transforms-2\files-2.1\43f856650d9ebd23d57d166c537c37bb\room-runtime-2.3.0\AndroidManifest.xml:27:13-43
-37            android:exported="false" />
-37-->[androidx.room:room-runtime:2.3.0] C:\Users\filip\.gradle\caches\transforms-2\files-2.1\43f856650d9ebd23d57d166c537c37bb\room-runtime-2.3.0\AndroidManifest.xml:28:13-37
-38    </application>
-39
-40</manifest>
+23        <activity android:name="com.example.bookstore.Views.BookDetailsActivity" />
+23-->C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:14:9-63
+23-->C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:14:19-60
+24        <activity android:name="com.example.bookstore.Views.MainActivity" >
+24-->C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:15:9-20:20
+24-->C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:15:19-53
+25            <intent-filter>
+25-->C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:16:13-19:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:17:17-69
+26-->C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:17:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:18:17-77
+28-->C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:18:27-74
+29            </intent-filter>
+30        </activity>
+31
+32        <service
+32-->[androidx.room:room-runtime:2.3.0] C:\Users\filip\.gradle\caches\transforms-2\files-2.1\43f856650d9ebd23d57d166c537c37bb\room-runtime-2.3.0\AndroidManifest.xml:25:9-28:40
+33            android:name="androidx.room.MultiInstanceInvalidationService"
+33-->[androidx.room:room-runtime:2.3.0] C:\Users\filip\.gradle\caches\transforms-2\files-2.1\43f856650d9ebd23d57d166c537c37bb\room-runtime-2.3.0\AndroidManifest.xml:26:13-74
+34            android:directBootAware="true"
+34-->[androidx.room:room-runtime:2.3.0] C:\Users\filip\.gradle\caches\transforms-2\files-2.1\43f856650d9ebd23d57d166c537c37bb\room-runtime-2.3.0\AndroidManifest.xml:27:13-43
+35            android:exported="false" />
+35-->[androidx.room:room-runtime:2.3.0] C:\Users\filip\.gradle\caches\transforms-2\files-2.1\43f856650d9ebd23d57d166c537c37bb\room-runtime-2.3.0\AndroidManifest.xml:28:13-37
+36    </application>
+37
+38</manifest>

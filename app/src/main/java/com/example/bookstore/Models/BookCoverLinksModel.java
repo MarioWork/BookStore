@@ -10,14 +10,13 @@ public class BookCoverLinksModel implements Parcelable {
 
     @SerializedName("thumbnail")
     @Expose
-    private String coverImage = "https://i.imgur.com/eFuERif.jpeg";
+    private String coverImage;
 
 
     //Constructor
     public BookCoverLinksModel(String coverImage) {
         this.coverImage = coverImage;
     }
-
 
     //Getters
     public String getCoverImage() {

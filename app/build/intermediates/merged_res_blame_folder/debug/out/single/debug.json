@@ -1,207 +1,59 @@
 [
     {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_favorites.xml.flat",
         "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\layout\\fragment_favorites.xml"
     },
     {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_favorite_filled.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\favorite_filled.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_book_icon.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\book_icon.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_emptylist_icon.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\emptylist_icon.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_all_books_list.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\all_books_list.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_emptylist_icon.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\emptylist_icon.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_all_books_list.xml.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\all_books_list.xml"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable_round_background.xml.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\drawable\\round_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_favorite_icon.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\favorite_icon.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_favorite_filled.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\favorite_filled.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_book_icon.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\book_icon.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_favorite_border.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\favorite_border.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_favorite_filled.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\favorite_filled.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_favorite_border.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\favorite_border.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_all_books_list.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\all_books_list.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_favorite_border.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\favorite_border.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_book_details.xml.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\layout\\activity_book_details.xml"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_book_icon.xml.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\book_icon.xml"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_favorite_border.xml.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\favorite_border.xml"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_favorite_border.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\favorite_border.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_favorite_border.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\favorite_border.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_favorite_icon.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\favorite_icon.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_favorite_icon.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\favorite_icon.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_emptylist_icon.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\emptylist_icon.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\menu_bottom_navigation.xml.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\menu\\bottom_navigation.xml"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bookcover.jpg.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\drawable\\bookcover.jpg"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_book_icon.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\book_icon.png"
+        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_feed.xml.flat",
         "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\layout\\fragment_feed.xml"
     },
     {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_emptylist_icon.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\emptylist_icon.png"
+        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable_empty_feed_list_icon.xml.flat",
+        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\drawable\\empty_feed_list_icon.xml"
     },
     {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_all_books_list.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\all_books_list.png"
+        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_all_books_list.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\all_books_list.png"
+        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_favorite_icon.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\favorite_icon.png"
+        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable_round_background.xml.flat",
+        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\drawable\\round_background.xml"
     },
     {
         "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_emptylist_icon.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\emptylist_icon.png"
-    },
-    {
         "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_favorite_icon.xml.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\favorite_icon.xml"
     },
     {
         "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_favorite_icon.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\favorite_icon.png"
+        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable_book_icon.xml.flat",
+        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\drawable\\book_icon.xml"
     },
     {
         "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\menu_feed_activity_menu.xml.flat",
@@ -216,75 +68,55 @@
         "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\layout\\book_rv_item.xml"
     },
     {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_emptylist_icon.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\emptylist_icon.png"
+        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_all_books_list.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\all_books_list.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_favorite_border.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\favorite_border.png"
+        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable_all_books_list.xml.flat",
+        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\drawable\\all_books_list.xml"
     },
     {
         "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_book_details.xml.flat",
+        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\layout\\activity_book_details.xml"
+    },
+    {
         "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\navigation_nav_graph.xml.flat",
         "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\navigation\\nav_graph.xml"
     },
     {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_favorite_filled.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\favorite_filled.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_favorite_filled.xml.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\favorite_filled.xml"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_favorite_filled.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\favorite_filled.png"
+        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable_empty_favorites_list_icon.xml.flat",
+        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\drawable\\empty_favorites_list_icon.xml"
     },
     {
         "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_favorite_icon.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\favorite_icon.png"
+        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable_favorite_icon.xml.flat",
+        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\drawable\\favorite_icon.xml"
     },
     {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_book_icon.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\book_icon.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_emptylist_icon.xml.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\emptylist_icon.xml"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_all_books_list.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\all_books_list.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_book_icon.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\book_icon.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_book_icon.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\book_icon.png"
-    },
-    {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_favorite_filled.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\favorite_filled.png"
+        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable_favorite_border.xml.flat",
+        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\drawable\\favorite_border.xml"
     },
     {
         "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\drawable_favorite_filled.xml.flat",
+        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\drawable\\favorite_filled.xml"
+    },
+    {
+        "merged": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\res\\merged\\debug\\menu_bottom_navigation.xml.flat",
+        "source": "C:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\src\\main\\res\\menu\\bottom_navigation.xml"
     }
 ]

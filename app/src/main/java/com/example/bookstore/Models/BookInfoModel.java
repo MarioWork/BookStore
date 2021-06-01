@@ -40,7 +40,7 @@ public class BookInfoModel implements Parcelable {
         this.publisher = publisher;
         this.publishDate = publishDate;
         this.description = description;
-        this.bookCover = bookCover;
+        this.bookCover = new BookCoverLinksModel("");
     }
 
 

@@ -4,6 +4,8 @@ package com.example.bookstore.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -28,12 +30,26 @@ public final class FragmentFeedBinding implements ViewBinding {
   @NonNull
   public final View divider;
 
+  @NonNull
+  public final ImageView emptyListImageIvFeed;
+
+  @NonNull
+  public final TextView emptyListTitleTvFeed;
+
+  @NonNull
+  public final ProgressBar progressBarFeed;
+
   private FragmentFeedBinding(@NonNull ConstraintLayout rootView, @NonNull RecyclerView bookRvFeed,
-      @NonNull TextView categoryTitleTvFeedFrag, @NonNull View divider) {
+      @NonNull TextView categoryTitleTvFeedFrag, @NonNull View divider,
+      @NonNull ImageView emptyListImageIvFeed, @NonNull TextView emptyListTitleTvFeed,
+      @NonNull ProgressBar progressBarFeed) {
     this.rootView = rootView;
     this.bookRvFeed = bookRvFeed;
     this.categoryTitleTvFeedFrag = categoryTitleTvFeedFrag;
     this.divider = divider;
+    this.emptyListImageIvFeed = emptyListImageIvFeed;
+    this.emptyListTitleTvFeed = emptyListTitleTvFeed;
+    this.progressBarFeed = progressBarFeed;
   }
 
   @Override
@@ -81,8 +97,27 @@ public final class FragmentFeedBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.emptyListImage_iv_feed;
+      ImageView emptyListImageIvFeed = rootView.findViewById(id);
+      if (emptyListImageIvFeed == null) {
+        break missingId;
+      }
+
+      id = R.id.emptyListTitle_tv_feed;
+      TextView emptyListTitleTvFeed = rootView.findViewById(id);
+      if (emptyListTitleTvFeed == null) {
+        break missingId;
+      }
+
+      id = R.id.progressBar_feed;
+      ProgressBar progressBarFeed = rootView.findViewById(id);
+      if (progressBarFeed == null) {
+        break missingId;
+      }
+
       return new FragmentFeedBinding((ConstraintLayout) rootView, bookRvFeed,
-          categoryTitleTvFeedFrag, divider);
+          categoryTitleTvFeedFrag, divider, emptyListImageIvFeed, emptyListTitleTvFeed,
+          progressBarFeed);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

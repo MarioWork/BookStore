@@ -73,4 +73,54 @@ public class BookModel implements Parcelable {
     }
 
 
+    //compare two books contents
+    public boolean compare(BookModel newBookModel) {
+        if (!this.getId().equals(newBookModel.getId())) {
+            return false;
+        }
+
+        if (!this.getBookInfo().getTitle().equals(newBookModel.getBookInfo().getTitle())) {
+            return false;
+        }
+
+        if (!this.getBookInfo().getDescription().equals(newBookModel.getBookInfo().getDescription())) {
+            return false;
+        }
+
+
+        if (!this.getBookInfo().getPublisher().equals(newBookModel.getBookInfo().getPublisher())) {
+            return false;
+        }
+
+
+        if (!this.getBookInfo().getPublishDate().equals(newBookModel.getBookInfo().getPublishDate())) {
+            return false;
+        }
+
+        if (!this.getBookInfo().getBookCover().getCoverImage().equals(newBookModel.getBookInfo().getBookCover().getCoverImage())) {
+            return false;
+        }
+
+
+        if (!this.getBookInfo().getAuthors().equals(newBookModel.getBookInfo().getAuthors())) {
+            return false;
+        }
+
+
+        if (!this.getBookSaleInfo().getPriceInfo().equals(newBookModel.getBookSaleInfo().getPriceInfo())) {
+            return false;
+        }
+
+        if (!this.getBookSaleInfo().getBuyLink().equals(newBookModel.getBookSaleInfo().getBuyLink())) {
+            return false;
+        }
+
+        if (!this.getBookSaleInfo().getForSale().equals(newBookModel.getBookSaleInfo().getForSale())) {
+            return false;
+        }
+
+        return true;
+
+    }
+
 }

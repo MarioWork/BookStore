@@ -92,7 +92,7 @@ public class BookDetailsActivity extends AppCompatActivity {
     //Initialize Verify and fill the widgets
     private void setupWidgetsWithData() {
         //Verify if there is ImageLink
-        if (bookModel.getBookInfo().getBookCover().getCoverImage() != null) {
+        if (bookModel.getBookInfo().getBookCover() != null) {
             Glide.with(coverImage.getContext())
                     .load(bookModel.getBookInfo().getBookCover().getCoverImage())
                     .placeholder(R.drawable.book_icon)
@@ -138,8 +138,14 @@ public class BookDetailsActivity extends AppCompatActivity {
             if (bookModel.getBookSaleInfo().getPriceInfo().getCurrencyCode() != null
                     && bookModel.getBookSaleInfo().getPriceInfo().getPrice() != null) {
 
-                forSale_btn.setText("Buy " + bookModel.getBookSaleInfo().getPriceInfo().getPrice()
-                        + " " + bookModel.getBookSaleInfo().getPriceInfo().getCurrencyCode());
+                if (bookModel.getBookSaleInfo().getPriceInfo().getCurrencyCode().equals("EUR")) {
+                    forSale_btn.setText("Buy " + bookModel.getBookSaleInfo().getPriceInfo().getPrice().replace(".", ",")
+                            + "€");
+                } else {
+                    forSale_btn.setText("Buy " + bookModel.getBookSaleInfo().getPriceInfo().getPrice().replace(".", ",")
+                            + bookModel.getBookSaleInfo().getPriceInfo().getCurrencyCode());
+                }
+
             }
         } else {
             forSale_btn.setEnabled(false);

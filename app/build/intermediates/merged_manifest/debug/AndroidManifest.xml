@@ -20,9 +20,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.BookStore" >
-        <activity
-            android:name="com.example.bookstore.Views.BookDetailsActivity"
-            android:parentActivityName="com.example.bookstore.Views.MainActivity" />
+        <activity android:name="com.example.bookstore.Views.BookDetailsActivity" />
         <activity android:name="com.example.bookstore.Views.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

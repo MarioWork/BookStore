@@ -1662,7 +1662,6 @@ drawable all_books_list
 drawable avd_hide_password
 drawable avd_show_password
 drawable book_icon
-drawable bookcover
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1677,7 +1676,8 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
-drawable emptylist_icon
+drawable empty_favorites_list_icon
+drawable empty_feed_list_icon
 drawable favorite_border
 drawable favorite_filled
 drawable favorite_icon
@@ -1893,9 +1893,9 @@ id easeInOut
 id easeOut
 id edit_query
 id elastic
-id emptyListImage_iv_favorites
-id emptyListTitle_tv_favorites
-id emptyListdescription_tv_favorties
+id emptyListImage_iv_feed
+id emptyListTitle_tv_feed
+id emptyListdescription_tv_feed
 id end
 id endToStart
 id enterAlways
@@ -2045,6 +2045,7 @@ id percent
 id pin
 id position
 id postLayout
+id progressBar_feed
 id progress_circular
 id progress_horizontal
 id publisher_tv_details

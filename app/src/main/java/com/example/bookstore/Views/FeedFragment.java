@@ -6,16 +6,20 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.paging.PagedList;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.bookstore.Adapters.Book_Rv_Adapter;
+import com.example.bookstore.Adapters.FeedBooksAdapter;
 import com.example.bookstore.Models.BookModel;
 import com.example.bookstore.R;
 import com.example.bookstore.ViewModels.BooksViewModel;
@@ -24,19 +28,19 @@ import static com.example.bookstore.Utils.AppConstants.CATEGORY;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.util.List;
-
 
 public class FeedFragment extends Fragment {
 
-    private Book_Rv_Adapter.IBookClicked listener;
+    private FeedBooksAdapter.IBookClicked listener;
     private BooksViewModel booksViewModel;
-    private Book_Rv_Adapter adapter;
+    private int startIndex = 0;
 
     //Widgets
     private RecyclerView bookRV;
     private TextView categoryTitle_tv;
 
+
+    FeedBooksAdapter adapter;
 
     @Nullable
     @org.jetbrains.annotations.Nullable
@@ -49,6 +53,7 @@ public class FeedFragment extends Fragment {
     public void onViewCreated(@NonNull @NotNull View view, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+
         categoryTitle_tv = getView().findViewById(R.id.categoryTitle_tv_feedFrag);
         categoryTitle_tv.setText(CATEGORY);
 
@@ -56,30 +61,32 @@ public class FeedFragment extends Fragment {
         onItemClick();
         setupBookRecyclerView();
 
-
         getAllBooksList();
+
+
     }
+
     private void setupBookRecyclerView() {
-        adapter = new Book_Rv_Adapter(listener);
         bookRV = getView().findViewById(R.id.book_rv_feed);
+        adapter = new FeedBooksAdapter(listener);
         bookRV.setAdapter(adapter);
     }
 
     private void getAllBooksList() {
         booksViewModel = new ViewModelProvider(this).get(BooksViewModel.class);
-        booksViewModel.getRetrofitBooks(String.valueOf(0)).observe(getActivity(), new Observer<List<BookModel>>() {
+
+        booksViewModel.getRetrofitBooks().observe(getActivity(), new Observer<PagedList<BookModel>>() {
             @Override
-            public void onChanged(List<BookModel> bookModels) {
-                if (bookModels != null && !bookModels.isEmpty()) {
-                    adapter.clearAndAddItems(bookModels); //Add the new items
-                    adapter.notifyDataSetChanged();
+            public void onChanged(PagedList<BookModel> bookModels) {
+                if (bookModels != null) {
+                    adapter.submitList(bookModels);
                 }
             }
         });
     }
 
     private void onItemClick() {
-        listener = new Book_Rv_Adapter.IBookClicked() {
+        listener = new FeedBooksAdapter.IBookClicked() {
             @Override
             public void onClick(int position) {
                 Intent intent = new Intent(getActivity(), BookDetailsActivity.class);
@@ -88,4 +95,6 @@ public class FeedFragment extends Fragment {
             }
         };
     }
+
+
 }

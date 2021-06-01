@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/emptyListImage_iv_favorites"
+        android:id="@+id/emptyListImage_iv_feed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone"
@@ -15,10 +15,10 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/divider"
         app:layout_constraintVertical_bias="0.32999998"
-        app:srcCompat="@drawable/emptylist_icon" />
+        app:srcCompat="@drawable/empty_favorites_list_icon" />
 
     <TextView
-        android:id="@+id/emptyListTitle_tv_favorites"
+        android:id="@+id/emptyListTitle_tv_feed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -30,11 +30,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emptyListImage_iv_favorites"
+        app:layout_constraintTop_toBottomOf="@+id/emptyListImage_iv_feed"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/emptyListdescription_tv_favorties"
+        android:id="@+id/emptyListdescription_tv_feed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -44,7 +44,7 @@
         android:visibility="gone"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emptyListTitle_tv_favorites" />
+        app:layout_constraintTop_toBottomOf="@+id/emptyListTitle_tv_feed" />
 
 
     <androidx.recyclerview.widget.RecyclerView
