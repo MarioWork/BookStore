@@ -1660,6 +1660,7 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable all_books_list
+drawable arrow_upward
 drawable avd_hide_password
 drawable avd_show_password
 drawable book_icon
@@ -1880,7 +1881,7 @@ id disablePostScroll
 id disableScroll
 id disjoint
 id divider
-id divider2
+id divider_details
 id dragDown
 id dragEnd
 id dragLeft
@@ -1893,9 +1894,9 @@ id easeInOut
 id easeOut
 id edit_query
 id elastic
-id emptyListImage_iv_feed
-id emptyListTitle_tv_feed
-id emptyListdescription_tv_feed
+id emptyListImage_iv_favorites
+id emptyListTitle_tv_favorites
+id emptyListdescription_tv_favorites
 id end
 id endToStart
 id enterAlways
@@ -1928,13 +1929,12 @@ id group_divider
 id grouping
 id groups
 id guideline
-id guideline2
-id guideline5
 id header_title
 id hideable
 id home
 id homeAsUp
 id honorRequest
+id horizontalGuideLine
 id icon
 id icon_group
 id ifRoom
@@ -2045,7 +2045,6 @@ id percent
 id pin
 id position
 id postLayout
-id progressBar_feed
 id progress_circular
 id progress_horizontal
 id publisher_tv_details
@@ -2067,7 +2066,11 @@ id screen
 id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
+id scrollTopButton_favorites
+id scrollTopButton_feed
 id scrollView
+id scrollViewBottom
+id scrollViewTop
 id scrollable
 id search_badge
 id search_bar
@@ -2140,7 +2143,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView4
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2168,11 +2170,13 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tv_title_desc
 id unchecked
 id uniform
 id unlabeled
 id up
 id useLogo
+id verticalGuideLine
 id view
 id view_offset_helper
 id view_tree_lifecycle_owner

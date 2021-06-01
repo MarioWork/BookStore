@@ -3,6 +3,8 @@ package com.example.bookstore.Views.Fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,7 +42,7 @@ public class FeedFragment extends Fragment {
     @org.jetbrains.annotations.Nullable
     @Override
     public View onCreateView(@NonNull @NotNull LayoutInflater inflater, @Nullable @org.jetbrains.annotations.Nullable ViewGroup container, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
-        binding = FragmentFeedBinding.inflate(inflater,container,false);
+        binding = FragmentFeedBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
         return view;
     }
@@ -50,6 +52,14 @@ public class FeedFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         binding.categoryTitleTvFeedFrag.setText(CATEGORY);
+
+        binding.scrollTopButtonFeed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                binding.bookRvFeed.smoothScrollToPosition(0);
+                binding.scrollTopButtonFeed.setVisibility(View.GONE);
+            }
+        });
 
         //Setup RecyclerView
         onItemClick();
@@ -62,6 +72,30 @@ public class FeedFragment extends Fragment {
     private void setupBookRecyclerView() {
         adapter = new FeedBooksAdapter(listener);
         binding.bookRvFeed.setAdapter(adapter);
+
+        binding.bookRvFeed.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(@NonNull @NotNull RecyclerView recyclerView, int newState) {
+                if (newState == RecyclerView.SCROLL_STATE_IDLE) { //Not Scrolling
+                    new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            binding.scrollTopButtonFeed.setVisibility(View.GONE);
+                        }
+                    }, 2000);
+                }
+            }
+
+            //Scroll to the top function
+            @Override
+            public void onScrolled(@NonNull @NotNull RecyclerView recyclerView, int dx, int dy) {
+                if (dy > 40) {
+                    binding.scrollTopButtonFeed.setVisibility(View.VISIBLE);
+                } else if (dy < 0) {
+                    binding.scrollTopButtonFeed.setVisibility(View.GONE);
+                }
+            }
+        });
     }
 
     private void getAllBooksList() {

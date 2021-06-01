@@ -12,6 +12,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import com.example.bookstore.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -27,29 +28,34 @@ public final class FragmentFavoritesBinding implements ViewBinding {
   public final View divider;
 
   @NonNull
-  public final ImageView emptyListImageIvFeed;
+  public final ImageView emptyListImageIvFavorites;
 
   @NonNull
-  public final TextView emptyListTitleTvFeed;
+  public final TextView emptyListTitleTvFavorites;
 
   @NonNull
-  public final TextView emptyListdescriptionTvFeed;
+  public final TextView emptyListdescriptionTvFavorites;
 
   @NonNull
   public final RecyclerView favoriteBooksRvFavorites;
 
+  @NonNull
+  public final FloatingActionButton scrollTopButtonFavorites;
+
   private FragmentFavoritesBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView categoryTitleTvFavorites, @NonNull View divider,
-      @NonNull ImageView emptyListImageIvFeed, @NonNull TextView emptyListTitleTvFeed,
-      @NonNull TextView emptyListdescriptionTvFeed,
-      @NonNull RecyclerView favoriteBooksRvFavorites) {
+      @NonNull ImageView emptyListImageIvFavorites, @NonNull TextView emptyListTitleTvFavorites,
+      @NonNull TextView emptyListdescriptionTvFavorites,
+      @NonNull RecyclerView favoriteBooksRvFavorites,
+      @NonNull FloatingActionButton scrollTopButtonFavorites) {
     this.rootView = rootView;
     this.categoryTitleTvFavorites = categoryTitleTvFavorites;
     this.divider = divider;
-    this.emptyListImageIvFeed = emptyListImageIvFeed;
-    this.emptyListTitleTvFeed = emptyListTitleTvFeed;
-    this.emptyListdescriptionTvFeed = emptyListdescriptionTvFeed;
+    this.emptyListImageIvFavorites = emptyListImageIvFavorites;
+    this.emptyListTitleTvFavorites = emptyListTitleTvFavorites;
+    this.emptyListdescriptionTvFavorites = emptyListdescriptionTvFavorites;
     this.favoriteBooksRvFavorites = favoriteBooksRvFavorites;
+    this.scrollTopButtonFavorites = scrollTopButtonFavorites;
   }
 
   @Override
@@ -91,21 +97,21 @@ public final class FragmentFavoritesBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.emptyListImage_iv_feed;
-      ImageView emptyListImageIvFeed = rootView.findViewById(id);
-      if (emptyListImageIvFeed == null) {
+      id = R.id.emptyListImage_iv_favorites;
+      ImageView emptyListImageIvFavorites = rootView.findViewById(id);
+      if (emptyListImageIvFavorites == null) {
         break missingId;
       }
 
-      id = R.id.emptyListTitle_tv_feed;
-      TextView emptyListTitleTvFeed = rootView.findViewById(id);
-      if (emptyListTitleTvFeed == null) {
+      id = R.id.emptyListTitle_tv_favorites;
+      TextView emptyListTitleTvFavorites = rootView.findViewById(id);
+      if (emptyListTitleTvFavorites == null) {
         break missingId;
       }
 
-      id = R.id.emptyListdescription_tv_feed;
-      TextView emptyListdescriptionTvFeed = rootView.findViewById(id);
-      if (emptyListdescriptionTvFeed == null) {
+      id = R.id.emptyListdescription_tv_favorites;
+      TextView emptyListdescriptionTvFavorites = rootView.findViewById(id);
+      if (emptyListdescriptionTvFavorites == null) {
         break missingId;
       }
 
@@ -115,9 +121,15 @@ public final class FragmentFavoritesBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.scrollTopButton_favorites;
+      FloatingActionButton scrollTopButtonFavorites = rootView.findViewById(id);
+      if (scrollTopButtonFavorites == null) {
+        break missingId;
+      }
+
       return new FragmentFavoritesBinding((ConstraintLayout) rootView, categoryTitleTvFavorites,
-          divider, emptyListImageIvFeed, emptyListTitleTvFeed, emptyListdescriptionTvFeed,
-          favoriteBooksRvFavorites);
+          divider, emptyListImageIvFavorites, emptyListTitleTvFavorites,
+          emptyListdescriptionTvFavorites, favoriteBooksRvFavorites, scrollTopButtonFavorites);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

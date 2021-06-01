@@ -4,7 +4,6 @@ package com.example.bookstore.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,6 +11,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import com.example.bookstore.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -30,16 +30,16 @@ public final class FragmentFeedBinding implements ViewBinding {
   public final View divider;
 
   @NonNull
-  public final ProgressBar progressBarFeed;
+  public final FloatingActionButton scrollTopButtonFeed;
 
   private FragmentFeedBinding(@NonNull ConstraintLayout rootView, @NonNull RecyclerView bookRvFeed,
       @NonNull TextView categoryTitleTvFeedFrag, @NonNull View divider,
-      @NonNull ProgressBar progressBarFeed) {
+      @NonNull FloatingActionButton scrollTopButtonFeed) {
     this.rootView = rootView;
     this.bookRvFeed = bookRvFeed;
     this.categoryTitleTvFeedFrag = categoryTitleTvFeedFrag;
     this.divider = divider;
-    this.progressBarFeed = progressBarFeed;
+    this.scrollTopButtonFeed = scrollTopButtonFeed;
   }
 
   @Override
@@ -87,14 +87,14 @@ public final class FragmentFeedBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.progressBar_feed;
-      ProgressBar progressBarFeed = rootView.findViewById(id);
-      if (progressBarFeed == null) {
+      id = R.id.scrollTopButton_feed;
+      FloatingActionButton scrollTopButtonFeed = rootView.findViewById(id);
+      if (scrollTopButtonFeed == null) {
         break missingId;
       }
 
       return new FragmentFeedBinding((ConstraintLayout) rootView, bookRvFeed,
-          categoryTitleTvFeedFrag, divider, progressBarFeed);
+          categoryTitleTvFeedFrag, divider, scrollTopButtonFeed);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

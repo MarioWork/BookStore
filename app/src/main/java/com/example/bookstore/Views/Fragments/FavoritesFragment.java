@@ -2,6 +2,8 @@ package com.example.bookstore.Views.Fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,6 +50,15 @@ public class FavoritesFragment extends Fragment {
 
         binding.categoryTitleTvFavorites.setText("Favorites");
 
+        binding.scrollTopButtonFavorites.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                binding.favoriteBooksRvFavorites.smoothScrollToPosition(0);
+                binding.scrollTopButtonFavorites.setVisibility(View.GONE);
+            }
+        });
+
+
         //Setup Recyclerview
         onItemClick();
         setupBookRecyclerView();
@@ -58,9 +69,35 @@ public class FavoritesFragment extends Fragment {
 
     }
 
+
     private void setupBookRecyclerView() {
         adapter = new FavoriteBooksAdapter(listener);
         binding.favoriteBooksRvFavorites.setAdapter(adapter);
+
+        //Scroll to top feature
+        binding.favoriteBooksRvFavorites.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(@NonNull @NotNull RecyclerView recyclerView, int newState) {
+                if (newState == RecyclerView.SCROLL_STATE_IDLE) { //Not Scrolling
+                    new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            binding.scrollTopButtonFavorites.setVisibility(View.GONE);
+                        }
+                    }, 2000);
+                }
+            }
+
+            //Scroll to the top function
+            @Override
+            public void onScrolled(@NonNull @NotNull RecyclerView recyclerView, int dx, int dy) {
+                if (dy > 40) {
+                    binding.scrollTopButtonFavorites.setVisibility(View.VISIBLE);
+                } else if (dy < 0) {
+                    binding.scrollTopButtonFavorites.setVisibility(View.GONE);
+                }
+            }
+        });
     }
 
     private void getFavoritesListIDS() {
@@ -71,15 +108,15 @@ public class FavoritesFragment extends Fragment {
                 if (bookTableList != null && !bookTableList.isEmpty()) {
                     getFavoritesList(bookTableList);
 
-                    binding.emptyListImageIvFeed.setVisibility(View.GONE);
-                    binding.emptyListTitleTvFeed.setVisibility(View.GONE);
-                    binding.emptyListdescriptionTvFeed.setVisibility(View.GONE);
+                    binding.emptyListImageIvFavorites.setVisibility(View.GONE);
+                    binding.emptyListTitleTvFavorites.setVisibility(View.GONE);
+                    binding.emptyListdescriptionTvFavorites.setVisibility(View.GONE);
                 } else {
                     adapter.clear();
                     adapter.notifyDataSetChanged();
-                    binding.emptyListImageIvFeed.setVisibility(View.VISIBLE);
-                    binding.emptyListTitleTvFeed.setVisibility(View.VISIBLE);
-                    binding.emptyListdescriptionTvFeed.setVisibility(View.VISIBLE);
+                    binding.emptyListImageIvFavorites.setVisibility(View.VISIBLE);
+                    binding.emptyListTitleTvFavorites.setVisibility(View.VISIBLE);
+                    binding.emptyListdescriptionTvFavorites.setVisibility(View.VISIBLE);
                 }
             }
         });

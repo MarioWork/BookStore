@@ -20,7 +20,6 @@ public class AllBooksDataSource extends PageKeyedDataSource<Integer, BookModel> 
     private static final int first_page = 0;
 
 
-
     @Override
     public void loadInitial(@NonNull @NotNull PageKeyedDataSource.LoadInitialParams<Integer> params, @NonNull @NotNull PageKeyedDataSource.LoadInitialCallback<Integer, BookModel> callback) {
 
@@ -81,17 +80,20 @@ public class AllBooksDataSource extends PageKeyedDataSource<Integer, BookModel> 
                         .getAllBooks("mobile development", params.key * MAX_RESULTS_PER_CALL, MAX_RESULTS_PER_CALL);
 
 
-
         call.enqueue(new Callback<BookShelfModel>() {
             @Override
             public void onResponse(Call<BookShelfModel> call, Response<BookShelfModel> response) {
                 if (!response.isSuccessful()) {
                     return;
                 }
-
                 if (response != null) {
-                    Integer key = params.requestedLoadSize > params.key ? params.key + 1 : null;
-                    Log.d("Teste","size: "+params.requestedLoadSize);
+                    Integer key = 0;
+
+                    try {
+                        key = params.requestedLoadSize > params.key ? params.key + 1 : null;
+                    } catch (Exception exception) {
+                        Log.d("AllBooksDataSource", "error message:" + exception.getMessage());
+                    }
                     callback.onResult(response.body().getBookModelList(), key);
                 }
             }

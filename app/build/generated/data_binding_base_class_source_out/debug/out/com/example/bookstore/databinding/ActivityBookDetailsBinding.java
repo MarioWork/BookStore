@@ -7,11 +7,13 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.Guideline;
+import androidx.core.widget.NestedScrollView;
 import androidx.viewbinding.ViewBinding;
 import com.example.bookstore.R;
 import java.lang.NullPointerException;
@@ -38,25 +40,31 @@ public final class ActivityBookDetailsBinding implements ViewBinding {
   public final TextView descriptionTvDetails;
 
   @NonNull
-  public final View divider2;
+  public final View dividerDetails;
 
   @NonNull
   public final ImageButton favoriteBtnDetails;
 
   @NonNull
-  public final Guideline guideline2;
-
-  @NonNull
-  public final Guideline guideline5;
+  public final Guideline horizontalGuideLine;
 
   @NonNull
   public final TextView publisherTvDetails;
 
   @NonNull
-  public final TextView textView4;
+  public final ScrollView scrollViewBottom;
+
+  @NonNull
+  public final NestedScrollView scrollViewTop;
 
   @NonNull
   public final TextView titleTvDetails;
+
+  @NonNull
+  public final TextView tvTitleDesc;
+
+  @NonNull
+  public final Guideline verticalGuideLine;
 
   @NonNull
   public final View view;
@@ -64,23 +72,26 @@ public final class ActivityBookDetailsBinding implements ViewBinding {
   private ActivityBookDetailsBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView authorsTvDetails, @NonNull Button buyBtnDetails,
       @NonNull ImageView coverIvDetails, @NonNull TextView dateTvDetails,
-      @NonNull TextView descriptionTvDetails, @NonNull View divider2,
-      @NonNull ImageButton favoriteBtnDetails, @NonNull Guideline guideline2,
-      @NonNull Guideline guideline5, @NonNull TextView publisherTvDetails,
-      @NonNull TextView textView4, @NonNull TextView titleTvDetails, @NonNull View view) {
+      @NonNull TextView descriptionTvDetails, @NonNull View dividerDetails,
+      @NonNull ImageButton favoriteBtnDetails, @NonNull Guideline horizontalGuideLine,
+      @NonNull TextView publisherTvDetails, @NonNull ScrollView scrollViewBottom,
+      @NonNull NestedScrollView scrollViewTop, @NonNull TextView titleTvDetails,
+      @NonNull TextView tvTitleDesc, @NonNull Guideline verticalGuideLine, @NonNull View view) {
     this.rootView = rootView;
     this.authorsTvDetails = authorsTvDetails;
     this.buyBtnDetails = buyBtnDetails;
     this.coverIvDetails = coverIvDetails;
     this.dateTvDetails = dateTvDetails;
     this.descriptionTvDetails = descriptionTvDetails;
-    this.divider2 = divider2;
+    this.dividerDetails = dividerDetails;
     this.favoriteBtnDetails = favoriteBtnDetails;
-    this.guideline2 = guideline2;
-    this.guideline5 = guideline5;
+    this.horizontalGuideLine = horizontalGuideLine;
     this.publisherTvDetails = publisherTvDetails;
-    this.textView4 = textView4;
+    this.scrollViewBottom = scrollViewBottom;
+    this.scrollViewTop = scrollViewTop;
     this.titleTvDetails = titleTvDetails;
+    this.tvTitleDesc = tvTitleDesc;
+    this.verticalGuideLine = verticalGuideLine;
     this.view = view;
   }
 
@@ -141,9 +152,9 @@ public final class ActivityBookDetailsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.divider2;
-      View divider2 = rootView.findViewById(id);
-      if (divider2 == null) {
+      id = R.id.divider_details;
+      View dividerDetails = rootView.findViewById(id);
+      if (dividerDetails == null) {
         break missingId;
       }
 
@@ -153,15 +164,9 @@ public final class ActivityBookDetailsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.guideline2;
-      Guideline guideline2 = rootView.findViewById(id);
-      if (guideline2 == null) {
-        break missingId;
-      }
-
-      id = R.id.guideline5;
-      Guideline guideline5 = rootView.findViewById(id);
-      if (guideline5 == null) {
+      id = R.id.horizontalGuideLine;
+      Guideline horizontalGuideLine = rootView.findViewById(id);
+      if (horizontalGuideLine == null) {
         break missingId;
       }
 
@@ -171,15 +176,33 @@ public final class ActivityBookDetailsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView4;
-      TextView textView4 = rootView.findViewById(id);
-      if (textView4 == null) {
+      id = R.id.scrollViewBottom;
+      ScrollView scrollViewBottom = rootView.findViewById(id);
+      if (scrollViewBottom == null) {
+        break missingId;
+      }
+
+      id = R.id.scrollViewTop;
+      NestedScrollView scrollViewTop = rootView.findViewById(id);
+      if (scrollViewTop == null) {
         break missingId;
       }
 
       id = R.id.title_tv_details;
       TextView titleTvDetails = rootView.findViewById(id);
       if (titleTvDetails == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_title_desc;
+      TextView tvTitleDesc = rootView.findViewById(id);
+      if (tvTitleDesc == null) {
+        break missingId;
+      }
+
+      id = R.id.verticalGuideLine;
+      Guideline verticalGuideLine = rootView.findViewById(id);
+      if (verticalGuideLine == null) {
         break missingId;
       }
 
@@ -190,9 +213,9 @@ public final class ActivityBookDetailsBinding implements ViewBinding {
       }
 
       return new ActivityBookDetailsBinding((ConstraintLayout) rootView, authorsTvDetails,
-          buyBtnDetails, coverIvDetails, dateTvDetails, descriptionTvDetails, divider2,
-          favoriteBtnDetails, guideline2, guideline5, publisherTvDetails, textView4, titleTvDetails,
-          view);
+          buyBtnDetails, coverIvDetails, dateTvDetails, descriptionTvDetails, dividerDetails,
+          favoriteBtnDetails, horizontalGuideLine, publisherTvDetails, scrollViewBottom,
+          scrollViewTop, titleTvDetails, tvTitleDesc, verticalGuideLine, view);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

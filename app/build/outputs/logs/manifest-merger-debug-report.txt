@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:2:1-23:12
+ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:2:1-24:12
 MERGED from [androidx.databinding:viewbinding:4.2.1] C:\Users\filip\.gradle\caches\transforms-2\files-2.1\947a71c6d3280253a2aa382ca3d9c53f\viewbinding-4.2.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-ui:2.3.5] C:\Users\filip\.gradle\caches\transforms-2\files-2.1\68198ebcb2b6bd749eec9f9577ee98d7\navigation-ui-2.3.5\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\filip\.gradle\caches\transforms-2\files-2.1\2730d74d200c17936a122ce975a9aa70\material-1.3.0\AndroidManifest.xml:17:1-24:12
@@ -51,20 +51,20 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\filip\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\filip\.gradle\caches\transforms-2\files-2.1\b33061385d67b982bb885113b832fc1e\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\filip\.gradle\caches\transforms-2\files-2.1\01df92b7300672a5ff8664dc3764ee51\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\filip\.gradle\caches\transforms-2\files-2.1\b32ccbb9fd89fa9e3b8ad0a62c999468\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:2:1-24:12
 	package
 		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:3:5-36
 		INJECTED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:2:1-23:12
+		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:2:1-24:12
 		INJECTED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:2:1-23:12
+		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:2:1-24:12
 		INJECTED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:2:11-69
@@ -73,7 +73,7 @@ ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifes
 	android:name
 		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:7:5-21:19
+ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:8:5-22:19
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\filip\.gradle\caches\transforms-2\files-2.1\2730d74d200c17936a122ce975a9aa70\material-1.3.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\filip\.gradle\caches\transforms-2\files-2.1\2730d74d200c17936a122ce975a9aa70\material-1.3.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\filip\.gradle\caches\transforms-2\files-2.1\f05760a6ab320001c8b604d10d78ac7b\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
@@ -91,35 +91,35 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\fi
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.5.0] C:\Users\filip\.gradle\caches\transforms-2\files-2.1\07adfc08fe16d3453ab9291511ec05fe\core-1.5.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:11:9-41
 	android:roundIcon
-		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:13:9-47
+		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:14:9-47
 activity#com.example.bookstore.Views.Activities.BookDetailsActivity
-ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:14:9-74
+ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:15:9-74
 	android:name
-		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:14:19-71
+		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:15:19-71
 activity#com.example.bookstore.Views.Activities.MainActivity
-ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:15:9-20:20
+ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:16:9-21:20
 	android:name
-		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:15:19-64
+		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:16:19-64
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:16:13-19:29
+ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:17:13-20:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:17:17-69
+ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:17:25-66
+		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:18:17-77
+ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:18:27-74
+		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:19:27-74
 uses-sdk
 INJECTED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml

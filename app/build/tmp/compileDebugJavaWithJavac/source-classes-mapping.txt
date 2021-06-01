@@ -51,6 +51,9 @@ com/example/bookstore/Views/Fragments/FeedFragment.java
  com.example.bookstore.Views.Fragments.FeedFragment
  com.example.bookstore.Views.Fragments.FeedFragment$1
  com.example.bookstore.Views.Fragments.FeedFragment$2
+ com.example.bookstore.Views.Fragments.FeedFragment$2$1
+ com.example.bookstore.Views.Fragments.FeedFragment$3
+ com.example.bookstore.Views.Fragments.FeedFragment$4
 com/example/bookstore/databinding/FragmentFeedBinding.java
  com.example.bookstore.databinding.FragmentFeedBinding
 com/example/bookstore/ViewModels/BooksViewModel.java
@@ -61,7 +64,10 @@ com/example/bookstore/Views/Fragments/FavoritesFragment.java
  com.example.bookstore.Views.Fragments.FavoritesFragment
  com.example.bookstore.Views.Fragments.FavoritesFragment$1
  com.example.bookstore.Views.Fragments.FavoritesFragment$2
+ com.example.bookstore.Views.Fragments.FavoritesFragment$2$1
  com.example.bookstore.Views.Fragments.FavoritesFragment$3
+ com.example.bookstore.Views.Fragments.FavoritesFragment$4
+ com.example.bookstore.Views.Fragments.FavoritesFragment$5
 com/example/bookstore/Adapters/FeedBooksAdapter.java
  com.example.bookstore.Adapters.FeedBooksAdapter
  com.example.bookstore.Adapters.FeedBooksAdapter$1
