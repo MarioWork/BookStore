@@ -87,14 +87,9 @@ public class AllBooksDataSource extends PageKeyedDataSource<Integer, BookModel> 
                     return;
                 }
                 if (response != null) {
-                    Integer key = 0;
-
-                    try {
-                        key = params.requestedLoadSize > params.key ? params.key + 1 : null;
-                    } catch (Exception exception) {
-                        Log.d("AllBooksDataSource", "error message:" + exception.getMessage());
-                    }
+                    Integer key = params.requestedLoadSize > params.key ? params.key + 1 : null;
                     callback.onResult(response.body().getBookModelList(), key);
+
                 }
             }
 

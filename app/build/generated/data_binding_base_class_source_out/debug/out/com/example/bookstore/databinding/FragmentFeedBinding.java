@@ -4,6 +4,7 @@ package com.example.bookstore.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -30,15 +31,19 @@ public final class FragmentFeedBinding implements ViewBinding {
   public final View divider;
 
   @NonNull
+  public final ProgressBar progressCircular;
+
+  @NonNull
   public final FloatingActionButton scrollTopButtonFeed;
 
   private FragmentFeedBinding(@NonNull ConstraintLayout rootView, @NonNull RecyclerView bookRvFeed,
       @NonNull TextView categoryTitleTvFeedFrag, @NonNull View divider,
-      @NonNull FloatingActionButton scrollTopButtonFeed) {
+      @NonNull ProgressBar progressCircular, @NonNull FloatingActionButton scrollTopButtonFeed) {
     this.rootView = rootView;
     this.bookRvFeed = bookRvFeed;
     this.categoryTitleTvFeedFrag = categoryTitleTvFeedFrag;
     this.divider = divider;
+    this.progressCircular = progressCircular;
     this.scrollTopButtonFeed = scrollTopButtonFeed;
   }
 
@@ -87,6 +92,12 @@ public final class FragmentFeedBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.progress_circular;
+      ProgressBar progressCircular = rootView.findViewById(id);
+      if (progressCircular == null) {
+        break missingId;
+      }
+
       id = R.id.scrollTopButton_feed;
       FloatingActionButton scrollTopButtonFeed = rootView.findViewById(id);
       if (scrollTopButtonFeed == null) {
@@ -94,7 +105,7 @@ public final class FragmentFeedBinding implements ViewBinding {
       }
 
       return new FragmentFeedBinding((ConstraintLayout) rootView, bookRvFeed,
-          categoryTitleTvFeedFrag, divider, scrollTopButtonFeed);
+          categoryTitleTvFeedFrag, divider, progressCircular, scrollTopButtonFeed);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

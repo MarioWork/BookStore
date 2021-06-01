@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -24,10 +25,15 @@ public class FeedBooksAdapter extends PagedListAdapter<BookModel, FeedBooksAdapt
 
     private FeedBooksAdapter.IBookClicked listener;
 
+    private ProgressBar progressBar;
     //Constructor
-    public FeedBooksAdapter(FeedBooksAdapter.IBookClicked listener) {
+    public FeedBooksAdapter(FeedBooksAdapter.IBookClicked listener, ProgressBar progressBar) {
         super(DIFF_CALLBACK);
         this.listener = listener;
+        this.progressBar = progressBar;
+
+        this.progressBar.setVisibility(View.VISIBLE);
+
     }
 
     @NotNull
@@ -40,6 +46,8 @@ public class FeedBooksAdapter extends PagedListAdapter<BookModel, FeedBooksAdapt
 
     @Override
     public void onBindViewHolder(@NonNull @NotNull FeedBooksViewHolder holder, int position) {
+
+
         //Cover Thumbnail imageview
         if (getItem(position).getBookInfo().getBookCover() != null) {
             Glide.with(holder.binding.bookCoverIvListItem.getContext())
@@ -59,6 +67,10 @@ public class FeedBooksAdapter extends PagedListAdapter<BookModel, FeedBooksAdapt
         if (getItem(position).getBookInfo().getAuthors() != null) {
             holder.binding.authorsTvListItem.setText("by " + getItem(position).getBookInfo().getAuthors()[0]);
         }
+
+
+        this.progressBar.setVisibility(View.GONE);
+
     }
 
     //Get the book at a certain position

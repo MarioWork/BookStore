@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -70,7 +71,7 @@ public class FeedFragment extends Fragment {
     }
 
     private void setupBookRecyclerView() {
-        adapter = new FeedBooksAdapter(listener);
+        adapter = new FeedBooksAdapter(listener,binding.progressCircular);
         binding.bookRvFeed.setAdapter(adapter);
 
         binding.bookRvFeed.addOnScrollListener(new RecyclerView.OnScrollListener() {
@@ -105,7 +106,11 @@ public class FeedFragment extends Fragment {
             @Override
             public void onChanged(PagedList<BookModel> bookModels) {
                 if (bookModels != null) {
-                    adapter.submitList(bookModels);
+                    try {
+                        adapter.submitList(bookModels);
+                    }catch (Exception ex){
+                        Log.d("error",ex.getMessage());
+                    }
                 }
             }
         });

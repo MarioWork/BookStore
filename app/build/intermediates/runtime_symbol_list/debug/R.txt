@@ -2045,6 +2045,7 @@ int id pin 0x7f08013c
 int id position 0x7f08013d
 int id postLayout 0x7f08013e
 int id progress_circular 0x7f08013f
+int id progress_circular_favorites 0x7f0801d0
 int id progress_horizontal 0x7f080140
 int id publisher_tv_details 0x7f080141
 int id radio 0x7f080142

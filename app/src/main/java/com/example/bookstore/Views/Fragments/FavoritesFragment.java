@@ -71,7 +71,7 @@ public class FavoritesFragment extends Fragment {
 
 
     private void setupBookRecyclerView() {
-        adapter = new FavoriteBooksAdapter(listener);
+        adapter = new FavoriteBooksAdapter(listener,binding.progressCircularFavorites);
         binding.favoriteBooksRvFavorites.setAdapter(adapter);
 
         //Scroll to top feature

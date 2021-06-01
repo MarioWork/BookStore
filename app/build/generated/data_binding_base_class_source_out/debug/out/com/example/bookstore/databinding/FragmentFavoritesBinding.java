@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -40,6 +41,9 @@ public final class FragmentFavoritesBinding implements ViewBinding {
   public final RecyclerView favoriteBooksRvFavorites;
 
   @NonNull
+  public final ProgressBar progressCircularFavorites;
+
+  @NonNull
   public final FloatingActionButton scrollTopButtonFavorites;
 
   private FragmentFavoritesBinding(@NonNull ConstraintLayout rootView,
@@ -47,6 +51,7 @@ public final class FragmentFavoritesBinding implements ViewBinding {
       @NonNull ImageView emptyListImageIvFavorites, @NonNull TextView emptyListTitleTvFavorites,
       @NonNull TextView emptyListdescriptionTvFavorites,
       @NonNull RecyclerView favoriteBooksRvFavorites,
+      @NonNull ProgressBar progressCircularFavorites,
       @NonNull FloatingActionButton scrollTopButtonFavorites) {
     this.rootView = rootView;
     this.categoryTitleTvFavorites = categoryTitleTvFavorites;
@@ -55,6 +60,7 @@ public final class FragmentFavoritesBinding implements ViewBinding {
     this.emptyListTitleTvFavorites = emptyListTitleTvFavorites;
     this.emptyListdescriptionTvFavorites = emptyListdescriptionTvFavorites;
     this.favoriteBooksRvFavorites = favoriteBooksRvFavorites;
+    this.progressCircularFavorites = progressCircularFavorites;
     this.scrollTopButtonFavorites = scrollTopButtonFavorites;
   }
 
@@ -121,6 +127,12 @@ public final class FragmentFavoritesBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.progress_circular_favorites;
+      ProgressBar progressCircularFavorites = rootView.findViewById(id);
+      if (progressCircularFavorites == null) {
+        break missingId;
+      }
+
       id = R.id.scrollTopButton_favorites;
       FloatingActionButton scrollTopButtonFavorites = rootView.findViewById(id);
       if (scrollTopButtonFavorites == null) {
@@ -129,7 +141,8 @@ public final class FragmentFavoritesBinding implements ViewBinding {
 
       return new FragmentFavoritesBinding((ConstraintLayout) rootView, categoryTitleTvFavorites,
           divider, emptyListImageIvFavorites, emptyListTitleTvFavorites,
-          emptyListdescriptionTvFavorites, favoriteBooksRvFavorites, scrollTopButtonFavorites);
+          emptyListdescriptionTvFavorites, favoriteBooksRvFavorites, progressCircularFavorites,
+          scrollTopButtonFavorites);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

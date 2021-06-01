@@ -3,6 +3,7 @@ package com.example.bookstore.Adapters;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -20,11 +21,15 @@ public class FavoriteBooksAdapter extends RecyclerView.Adapter<FavoriteBooksAdap
 
     private List<BookModel> bookList;
     private IBookClicked listener;
+    private ProgressBar progressBar;
 
     //Constructor
-    public FavoriteBooksAdapter(IBookClicked listener) {
+    public FavoriteBooksAdapter(IBookClicked listener, ProgressBar progressBar) {
         bookList = new ArrayList<>();
         this.listener = listener;
+        this.progressBar = progressBar;
+
+        this.progressBar.setVisibility(View.VISIBLE);
     }
 
     //Get book in a certain position
@@ -72,6 +77,8 @@ public class FavoriteBooksAdapter extends RecyclerView.Adapter<FavoriteBooksAdap
         if (bookList.get(position).getBookInfo().getAuthors() != null) {
             holder.binding.authorsTvListItem.setText("by " + bookList.get(position).getBookInfo().getAuthors()[0]);
         }
+
+        progressBar.setVisibility(View.GONE);
     }
 
     @Override
