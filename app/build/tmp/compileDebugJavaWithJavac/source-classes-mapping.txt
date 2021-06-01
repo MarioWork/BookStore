@@ -22,24 +22,23 @@ com/example/bookstore/Models/BookSaleInfoModel.java
  com.example.bookstore.Models.BookSaleInfoModel$1
 com/example/bookstore/databinding/ActivityMainBinding.java
  com.example.bookstore.databinding.ActivityMainBinding
-com/example/bookstore/databinding/BookRvItemBinding.java
- com.example.bookstore.databinding.BookRvItemBinding
 com/example/bookstore/Models/BookPriceInfoModel.java
  com.example.bookstore.Models.BookPriceInfoModel
  com.example.bookstore.Models.BookPriceInfoModel$1
-com/example/bookstore/Retrofit/AllBooksDataSourceFactory.java
- com.example.bookstore.Retrofit.AllBooksDataSourceFactory
+com/example/bookstore/Views/Activities/MainActivity.java
+ com.example.bookstore.Views.Activities.MainActivity
+ com.example.bookstore.Views.Activities.MainActivity$1
+com/example/bookstore/Views/Activities/BookDetailsActivity.java
+ com.example.bookstore.Views.Activities.BookDetailsActivity
+ com.example.bookstore.Views.Activities.BookDetailsActivity$1
 com/example/bookstore/Retrofit/IBooksApi.java
  com.example.bookstore.Retrofit.IBooksApi
 com/example/bookstore/databinding/FragmentFavoritesBinding.java
  com.example.bookstore.databinding.FragmentFavoritesBinding
-com/example/bookstore/Views/BookDetailsActivity.java
- com.example.bookstore.Views.BookDetailsActivity
- com.example.bookstore.Views.BookDetailsActivity$1
 com/example/bookstore/Adapters/FavoriteBooksAdapter.java
  com.example.bookstore.Adapters.FavoriteBooksAdapter
+ com.example.bookstore.Adapters.FavoriteBooksAdapter$FavoritesViewHolder
  com.example.bookstore.Adapters.FavoriteBooksAdapter$IBookClicked
- com.example.bookstore.Adapters.FavoriteBooksAdapter$ViewHolder
 com/example/bookstore/Retrofit/AllBooksDataSource.java
  com.example.bookstore.Retrofit.AllBooksDataSource
  com.example.bookstore.Retrofit.AllBooksDataSource$1
@@ -48,34 +47,35 @@ com/example/bookstore/Retrofit/AllBooksDataSource.java
 com/example/bookstore/Models/BookModel.java
  com.example.bookstore.Models.BookModel
  com.example.bookstore.Models.BookModel$1
-com/example/bookstore/Room/BookTable.java
- com.example.bookstore.Room.BookTable
+com/example/bookstore/Views/Fragments/FeedFragment.java
+ com.example.bookstore.Views.Fragments.FeedFragment
+ com.example.bookstore.Views.Fragments.FeedFragment$1
+ com.example.bookstore.Views.Fragments.FeedFragment$2
+com/example/bookstore/databinding/FragmentFeedBinding.java
+ com.example.bookstore.databinding.FragmentFeedBinding
 com/example/bookstore/ViewModels/BooksViewModel.java
  com.example.bookstore.ViewModels.BooksViewModel
 com/example/bookstore/databinding/ActivityBookDetailsBinding.java
  com.example.bookstore.databinding.ActivityBookDetailsBinding
+com/example/bookstore/Views/Fragments/FavoritesFragment.java
+ com.example.bookstore.Views.Fragments.FavoritesFragment
+ com.example.bookstore.Views.Fragments.FavoritesFragment$1
+ com.example.bookstore.Views.Fragments.FavoritesFragment$2
+ com.example.bookstore.Views.Fragments.FavoritesFragment$3
 com/example/bookstore/Adapters/FeedBooksAdapter.java
  com.example.bookstore.Adapters.FeedBooksAdapter
  com.example.bookstore.Adapters.FeedBooksAdapter$1
+ com.example.bookstore.Adapters.FeedBooksAdapter$FeedBooksViewHolder
+ com.example.bookstore.Adapters.FeedBooksAdapter$FeedBooksViewHolder$1
  com.example.bookstore.Adapters.FeedBooksAdapter$IBookClicked
- com.example.bookstore.Adapters.FeedBooksAdapter$TestViewHolder
- com.example.bookstore.Adapters.FeedBooksAdapter$TestViewHolder$1
 com/example/bookstore/Repository/BooksRepository.java
  com.example.bookstore.Repository.BooksRepository
  com.example.bookstore.Repository.BooksRepository$1
  com.example.bookstore.Repository.BooksRepository$InsertFavoriteBookAsyncTask
  com.example.bookstore.Repository.BooksRepository$RemoveFavoriteBookAsyncTask
-com/example/bookstore/Views/FavoritesFragment.java
- com.example.bookstore.Views.FavoritesFragment
- com.example.bookstore.Views.FavoritesFragment$1
- com.example.bookstore.Views.FavoritesFragment$2
- com.example.bookstore.Views.FavoritesFragment$3
-com/example/bookstore/databinding/FragmentFeedBinding.java
- com.example.bookstore.databinding.FragmentFeedBinding
-com/example/bookstore/Views/FeedFragment.java
- com.example.bookstore.Views.FeedFragment
- com.example.bookstore.Views.FeedFragment$1
- com.example.bookstore.Views.FeedFragment$2
-com/example/bookstore/Views/MainActivity.java
- com.example.bookstore.Views.MainActivity
- com.example.bookstore.Views.MainActivity$1
+com/example/bookstore/databinding/BookRvItemBinding.java
+ com.example.bookstore.databinding.BookRvItemBinding
+com/example/bookstore/Room/BookTable.java
+ com.example.bookstore.Room.BookTable
+com/example/bookstore/Retrofit/AllBooksDataSourceFactory.java
+ com.example.bookstore.Retrofit.AllBooksDataSourceFactory

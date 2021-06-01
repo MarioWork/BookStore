@@ -1,5 +1,6 @@
 package com.example.bookstore.Adapters;
 
+import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,10 +15,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.bookstore.Models.BookModel;
 import com.example.bookstore.R;
+import com.example.bookstore.databinding.BookRvItemBinding;
+import com.example.bookstore.databinding.FragmentFavoritesBinding;
 
 import org.jetbrains.annotations.NotNull;
 
-public class FeedBooksAdapter extends PagedListAdapter<BookModel, FeedBooksAdapter.TestViewHolder> {
+public class FeedBooksAdapter extends PagedListAdapter<BookModel, FeedBooksAdapter.FeedBooksViewHolder> {
 
     private FeedBooksAdapter.IBookClicked listener;
 
@@ -27,41 +30,40 @@ public class FeedBooksAdapter extends PagedListAdapter<BookModel, FeedBooksAdapt
         this.listener = listener;
     }
 
-    //Get the book at a certain position
-    public BookModel getBook(int position) {
-        return getItem(position);
-    }
-
     @NotNull
     @Override
-    public TestViewHolder onCreateViewHolder(@NonNull @NotNull ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.book_rv_item, parent, false);
-        return new FeedBooksAdapter.TestViewHolder(itemView);
+    public FeedBooksViewHolder onCreateViewHolder(@NonNull @NotNull ViewGroup parent, int viewType) {
+        return new FeedBooksViewHolder(BookRvItemBinding
+                .inflate(LayoutInflater
+                        .from(parent.getContext()), parent, false));
     }
 
     @Override
-    public void onBindViewHolder(@NonNull @NotNull FeedBooksAdapter.TestViewHolder holder, int position) {
-
-
+    public void onBindViewHolder(@NonNull @NotNull FeedBooksViewHolder holder, int position) {
         //Cover Thumbnail imageview
         if (getItem(position).getBookInfo().getBookCover() != null) {
-            Glide.with(holder.itemView.getContext())
+            Glide.with(holder.binding.bookCoverIvListItem.getContext())
                     .load(getItem(position).getBookInfo().getBookCover().getCoverImage())
                     .placeholder(R.drawable.book_icon)
-                    .into(holder.bookCover);
+                    .into(holder.binding.bookCoverIvListItem);
         }
 
 
         //Title Textview
         if (getItem(position).getBookInfo().getTitle() != null) {
-            holder.title.setText(getItem(position).getBookInfo().getTitle());
+            holder.binding.titleTvListItem.setText(getItem(position).getBookInfo().getTitle());
         }
 
 
         //Authors Textview
         if (getItem(position).getBookInfo().getAuthors() != null) {
-            holder.authors.setText("by " + getItem(position).getBookInfo().getAuthors()[0]);
+            holder.binding.authorsTvListItem.setText("by " + getItem(position).getBookInfo().getAuthors()[0]);
         }
+    }
+
+    //Get the book at a certain position
+    public BookModel getBook(int position) {
+        return getItem(position);
     }
 
     //Compare items
@@ -78,26 +80,20 @@ public class FeedBooksAdapter extends PagedListAdapter<BookModel, FeedBooksAdapt
     };
 
 
-    public class TestViewHolder extends RecyclerView.ViewHolder {
-        private ImageView bookCover;
-        private TextView title, authors;
+    public class FeedBooksViewHolder extends RecyclerView.ViewHolder {
+        BookRvItemBinding binding;
 
-        public TestViewHolder(@NonNull @NotNull View itemView) {
-            super(itemView);
-
-            bookCover = itemView.findViewById(R.id.bookCover_iv_listItem);
-            title = itemView.findViewById(R.id.title_tv_listItem);
-            authors = itemView.findViewById(R.id.authors_tv_listItem);
+        public FeedBooksViewHolder(@NonNull BookRvItemBinding binding) {
+            super(binding.getRoot());
+            this.binding = binding;
 
             //OnItemClick
-            itemView.setOnClickListener(new View.OnClickListener() {
+            binding.cardview.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     listener.onClick(getAdapterPosition());
                 }
             });
-
-
         }
 
 

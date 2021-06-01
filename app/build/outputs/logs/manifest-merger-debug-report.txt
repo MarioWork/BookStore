@@ -102,14 +102,14 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\fi
 		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
 		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:13:9-47
-activity#com.example.bookstore.Views.BookDetailsActivity
-ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:14:9-63
+activity#com.example.bookstore.Views.Activities.BookDetailsActivity
+ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:14:9-74
 	android:name
-		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:14:19-60
-activity#com.example.bookstore.Views.MainActivity
+		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:14:19-71
+activity#com.example.bookstore.Views.Activities.MainActivity
 ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:15:9-20:20
 	android:name
-		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:15:19-53
+		ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:15:19-64
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\filip\Documents\GitHub\BookStore\app\src\main\AndroidManifest.xml:16:13-19:29
 action#android.intent.action.MAIN

@@ -6,6 +6,7 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
+
     defaultConfig {
         applicationId "com.example.bookstore"
         minSdkVersion 19
@@ -30,6 +31,7 @@ android {
     }
     buildFeatures {
         viewBinding true
+
     }
 }
 

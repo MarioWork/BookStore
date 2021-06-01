@@ -1071,6 +1071,7 @@ color foreground_material_light
 color grey
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1683,7 +1684,6 @@ drawable favorite_filled
 drawable favorite_icon
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
-drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black

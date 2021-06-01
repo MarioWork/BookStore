@@ -3,8 +3,6 @@ package com.example.bookstore.Adapters;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -13,11 +11,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.bookstore.Models.BookModel;
 import com.example.bookstore.R;
+import com.example.bookstore.databinding.BookRvItemBinding;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class FavoriteBooksAdapter extends RecyclerView.Adapter<FavoriteBooksAdapter.ViewHolder> {
+public class FavoriteBooksAdapter extends RecyclerView.Adapter<FavoriteBooksAdapter.FavoritesViewHolder> {
 
     private List<BookModel> bookList;
     private IBookClicked listener;
@@ -38,34 +37,40 @@ public class FavoriteBooksAdapter extends RecyclerView.Adapter<FavoriteBooksAdap
         bookList.addAll(books);
     }
 
+    public void clear() {
+        bookList.clear();
+        this.notifyDataSetChanged();
+    }
+
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.book_rv_item, parent, false);
-        return new ViewHolder(itemView);
+    public FavoritesViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        return new FavoritesViewHolder(BookRvItemBinding
+                .inflate(LayoutInflater
+                        .from(parent.getContext()), parent, false));
     }
 
     @Override
-    public void onBindViewHolder(@NonNull FavoriteBooksAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(FavoritesViewHolder holder, int position) {
 
         //Cover Thumbnail imageview
         if (bookList.get(position).getBookInfo().getBookCover().getCoverImage() != null) {
-            Glide.with(holder.itemView.getContext())
+            Glide.with(holder.binding.bookCoverIvListItem.getContext())
                     .load(bookList.get(position).getBookInfo().getBookCover().getCoverImage())
                     .placeholder(R.drawable.book_icon)
-                    .into(holder.bookCover);
+                    .into(holder.binding.bookCoverIvListItem);
         }
 
 
         //Title Textview
         if (bookList.get(position).getBookInfo().getTitle() != null) {
-            holder.title.setText(bookList.get(position).getBookInfo().getTitle());
+            holder.binding.titleTvListItem.setText(bookList.get(position).getBookInfo().getTitle());
         }
 
 
         //Authors Textview
         if (bookList.get(position).getBookInfo().getAuthors() != null) {
-            holder.authors.setText("by " + bookList.get(position).getBookInfo().getAuthors()[0]);
+            holder.binding.authorsTvListItem.setText("by " + bookList.get(position).getBookInfo().getAuthors()[0]);
         }
     }
 
@@ -75,19 +80,17 @@ public class FavoriteBooksAdapter extends RecyclerView.Adapter<FavoriteBooksAdap
     }
 
     //View Holder Class
-    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        private ImageView bookCover;
-        private TextView title, authors;
+    public class FavoritesViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+
+        private BookRvItemBinding binding;
 
 
         //List Item
-        public ViewHolder(@NonNull View itemView) {
-            super(itemView);
-            bookCover = itemView.findViewById(R.id.bookCover_iv_listItem);
-            title = itemView.findViewById(R.id.title_tv_listItem);
-            authors = itemView.findViewById(R.id.authors_tv_listItem);
+        public FavoritesViewHolder(BookRvItemBinding binding) {
+            super(binding.getRoot());
+            this.binding = binding;
 
-            itemView.setOnClickListener(this);
+            binding.cardview.setOnClickListener(this);
         }
 
         //OnRecyclerViewItemClick
