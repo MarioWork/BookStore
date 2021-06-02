@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -114,6 +115,7 @@ public class FavoritesFragment extends Fragment {
                 } else {
                     adapter.clear();
                     adapter.notifyDataSetChanged();
+                    binding.progressCircularFavorites.setVisibility(View.GONE);
                     binding.emptyListImageIvFavorites.setVisibility(View.VISIBLE);
                     binding.emptyListTitleTvFavorites.setVisibility(View.VISIBLE);
                     binding.emptyListdescriptionTvFavorites.setVisibility(View.VISIBLE);
