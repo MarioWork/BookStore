@@ -21,9 +21,6 @@ import java.util.List;
 import static com.example.bookstore.Utils.AppConstants.MAX_RESULTS_PER_CALL;
 
 public class BooksViewModel extends AndroidViewModel {
-    private LiveData<PagedList<BookModel>> pagedListLiveData;
-    private LiveData<PageKeyedDataSource<Integer, BookModel>> pageKeyedDataSourceLiveData;
-
 
     private BooksRepository booksRepository;
 
@@ -35,15 +32,13 @@ public class BooksViewModel extends AndroidViewModel {
 
     public LiveData<PagedList<BookModel>> getRetrofitBooks() {
         AllBooksDataSourceFactory allBooksDataSourceFactory = new AllBooksDataSourceFactory();
-        pageKeyedDataSourceLiveData = allBooksDataSourceFactory.getDataSourceList();
-
         PagedList.Config config =
                 (new PagedList.Config.Builder()
                         .setEnablePlaceholders(false)
                         .setPageSize(MAX_RESULTS_PER_CALL))
                         .build();
 
-        return pagedListLiveData = (new LivePagedListBuilder(allBooksDataSourceFactory, config)).build();
+        return new LivePagedListBuilder(allBooksDataSourceFactory, config).build();
     }
 
     public LiveData<List<BookTable>> getFavoriteBooksIDS() {
