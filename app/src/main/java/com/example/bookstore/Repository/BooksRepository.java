@@ -3,17 +3,14 @@ package com.example.bookstore.Repository;
 
 import android.app.Application;
 import android.os.AsyncTask;
-import android.util.Log;
-import android.widget.Toast;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
 
-import com.example.bookstore.Retrofit.IBooksApi;
+import com.example.bookstore.Retrofit.IBookService;
 import com.example.bookstore.Models.BookModel;
-import com.example.bookstore.Models.BookShelfModel;
-import com.example.bookstore.Retrofit.RetrofitRequest;
+import com.example.bookstore.Retrofit.BooksServiceClient;
 import com.example.bookstore.Room.BookTable;
 import com.example.bookstore.Room.BookTableDAO;
 import com.example.bookstore.Room.FavoriteBooksDatabase;
@@ -25,12 +22,10 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-import static com.example.bookstore.Utils.AppConstants.MAX_RESULTS_PER_CALL;
-
 
 public class BooksRepository {
     //Retrofit
-    private final IBooksApi booksApi;
+    private final IBookService booksApi;
 
     //Room
     private MutableLiveData<List<BookModel>> favoriteBooks;
@@ -38,7 +33,7 @@ public class BooksRepository {
 
     //Constructor
     public BooksRepository(Application application) {
-        booksApi = RetrofitRequest.getRetrofitInstance().create(IBooksApi.class);
+        booksApi = BooksServiceClient.getBookService();
         favoriteBooks = new MutableLiveData<>();
 
         FavoriteBooksDatabase database =
@@ -81,9 +76,8 @@ public class BooksRepository {
         return favoriteBooks;
     }
 
-
     //Checks if the book exists in the local database (room)
-    public LiveData<BookTable> checkIfFavoriteBookExistsLocaly(String bookID) {
+    public LiveData<BookTable> checkIfFavoriteBookExistsLocally(String bookID) {
         return bookTableDAO.getFavoriteBookByID(bookID);
     }
 
@@ -96,7 +90,6 @@ public class BooksRepository {
     public void removeFavoriteBookByID(String bookID) {
         new RemoveFavoriteBookAsyncTask(bookTableDAO).execute(bookID);
     }
-
 
     //Asynctask Class for inserting a favorite Book
     private static class InsertFavoriteBookAsyncTask extends AsyncTask<BookTable, Void, Void> {

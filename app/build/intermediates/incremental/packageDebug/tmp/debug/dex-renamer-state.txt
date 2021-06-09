@@ -1,4 +1,4 @@
-#Sun Jun 06 03:13:23 AZOST 2021
+#Wed Jun 09 00:06:08 AZOST 2021
 base.0=C\:\\Users\\filip\\Documents\\GitHub\\BookStore\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

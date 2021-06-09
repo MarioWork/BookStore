@@ -6,12 +6,11 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.paging.LivePagedListBuilder;
-import androidx.paging.PageKeyedDataSource;
 import androidx.paging.PagedList;
 
 import com.example.bookstore.Models.BookModel;
 import com.example.bookstore.Repository.BooksRepository;
-import com.example.bookstore.Retrofit.AllBooksDataSourceFactory;
+import com.example.bookstore.Repository.AllBooksDataSourceFactory;
 import com.example.bookstore.Room.BookTable;
 
 import org.jetbrains.annotations.NotNull;
@@ -54,7 +53,7 @@ public class BooksViewModel extends AndroidViewModel {
     }
 
     public LiveData<BookTable> getFavoriteBookByID(String bookID) {
-        return booksRepository.checkIfFavoriteBookExistsLocaly(bookID);
+        return booksRepository.checkIfFavoriteBookExistsLocally(bookID);
     }
 
     public void removeFavoriteBook(String bookID) {

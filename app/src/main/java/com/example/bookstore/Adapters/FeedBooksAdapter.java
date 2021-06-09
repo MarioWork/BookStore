@@ -26,12 +26,12 @@ public class FeedBooksAdapter extends PagedListAdapter<BookModel, FeedBooksAdapt
     private FeedBooksAdapter.IBookClicked listener;
 
     private ProgressBar progressBar;
+
     //Constructor
     public FeedBooksAdapter(FeedBooksAdapter.IBookClicked listener, ProgressBar progressBar) {
         super(DIFF_CALLBACK);
         this.listener = listener;
         this.progressBar = progressBar;
-
         this.progressBar.setVisibility(View.VISIBLE);
 
     }
