@@ -2,7 +2,7 @@
 This project consists of a Android Application that connects to the Google Books API and lets the user see all books about Mobile Development, add them to favorites as please and redirects to the correct location to buy the book.
 
 ## Technologies
-+ Java
++ Java 8
 + Android Studio 
 + Retrofit  
 + Gson Converter
