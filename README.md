@@ -9,7 +9,7 @@ This project consists of a Android Application that connects to the Google Books
 + Room
 
 ## WebAPI Consumed
- [Goole Books API](https://developers.google.com/books/docs/v1/getting_started#REST)
+ [Google Books API](https://developers.google.com/books/docs/v1/getting_started#REST)
 
 
 ## Some APP UI Images
